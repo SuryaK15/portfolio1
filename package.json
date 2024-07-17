@@ -1,12 +1,12 @@
 {
     "name": "v4",
     "description": "Personal Website",
-    "homepage": "https://SuryaK15.github.io/portfoliov1",
+    "homepage": "https://suryak15.github.io/portfolio1",
     "version": "1.0.0",
     "author": "Surya Kiran M <reachout.suryakiran@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/SuryaK15/portfoliov1"
+        "url": "https://github.com/SuryaK15/portfolio1"
     },
     "keywords": [
         "gatsby"
@@ -15,7 +15,7 @@
     "browserslist": "> 0.25%, not dead",
     "scripts": {
         "build": "gatsby build",
-        "develop": "gatsby develop",
+        "develop": "gatsby develop && gh-pages -d public",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "npm run develop",
         "deploy": "gh-pages -d public",
