@@ -5,7 +5,7 @@
   My Portfolio Website built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
 </p>
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+![demo](src/images/demo.png)
 
 ## 🛠 Installation & Set Up
 
