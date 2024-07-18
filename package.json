@@ -15,23 +15,22 @@
     "browserslist": "> 0.25%, not dead",
     "scripts": {
         "build": "gatsby build",
-        "develop": "gatsby develop && gh-pages -d public",
+        "develop": "gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "npm run develop",
-        "deploy": "gh-pages -d public",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "prepare": "husky install",
         "lint-staged": "lint-staged"
-    },
-    "lint-staged": {
+      },
+      "lint-staged": {
         "*.{js,css,json,md}": [
-            "prettier --write"
+          "prettier --write"
         ],
         "*.js": [
-            "eslint --fix"
+          "eslint --fix"
         ]
-    },
+      },
     "dependencies": {
         "animejs": "^3.1.0",
         "babel-plugin-styled-components": "^1.12.0",
