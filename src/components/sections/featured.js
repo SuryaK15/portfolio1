@@ -304,6 +304,26 @@ const StyledProject = styled.li`
   }
 `;
 
+const ConnectButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+`;
+
+const ConnectButton = styled.a`
+  ${({ theme }) => theme.mixins.bigButton};
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  border-radius: 20px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--lightest-navy);
+    color: var(--green);
+    outline: none;
+  }
+`;
+
 const Featured = () => {
   const data = useStaticQuery(graphql`
     {
@@ -405,6 +425,12 @@ const Featured = () => {
             );
           })}
       </StyledProjectsGrid>
+
+      <ConnectButtonContainer>
+        <ConnectButton href="https://github.com/SuryaK15?tab=repositories" target="_blank">
+          All of my cool stuff!
+        </ConnectButton>
+      </ConnectButtonContainer>
     </section>
   );
 };
