@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -41,7 +41,7 @@ const StyledContactSection = styled.section`
     display: inline-block;
     border-radius: var(--border-radius);
     transition: var(--transition);
-    border-radius: 20px; 
+    border-radius: 20px;
     &:hover,
     &:focus,
     &:active {
@@ -68,14 +68,14 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading overline">What’s Next?</h2>
 
-      <h2 className="title">Get In Touch</h2>
+      <h2 className="title">Get In Touch.</h2>
 
       <p>
-        My inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        My inbox is always open. Whether you have a question or just want to say hi, I’ll get back
+        to you shortly!
       </p>
 
-      <a className="email-link" href='https://www.linkedin.com/in/suryak15'>
+      <a className="email-link" href="https://www.linkedin.com/in/suryak15">
         Say Hello!
       </a>
     </StyledContactSection>

@@ -61,7 +61,6 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: 20px;
-    background-color: var(--green);
     z-index: 100;
     box-shadow: 10px 10px 10px rgba(255, 226, 226, 0.3);
     cursor: pointer;
@@ -69,12 +68,7 @@ const StyledPic = styled.div`
     &:hover,
     &:focus {
       outline: 0;
-      transform: translate(-4px, -4px);
       box-shadow: 10px 10px 10px rgba(255, 226, 226, 0.3);
-
-      &:after {
-        transform: translate(8px, 8px);
-      }
 
       .img {
         filter: none;
@@ -104,7 +98,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Java', 'Python', 'Linux', 'MySQL', 'PySpark', 'Hadoop', 'Grafana', 'Graphite QL', 'Docker','React'];
+  const skills = [
+    'Java',
+    'Python',
+    'Linux',
+    'MySQL',
+    'PySpark',
+    'Hadoop',
+    'Grafana',
+    'Graphite QL',
+    'Docker',
+    'React',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -114,17 +119,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            Hello, my name is Surya and I'm a Software Engineer based in India.
-            I spend my time building beautiful products, learning new stuff.
+              Hello, my name is Surya and I'm a Software Engineer based in India. I spend my time
+              building beautiful products, learning new stuff.
             </p>
 
             <p>
-              Fast-forward to today, I am currently in my 4<sup>th</sup> year of Bachelor's and I’ve had the privilege of interning at{' '}
+              Fast-forward to today, Currently I am in my 4<sup>th</sup> year of Bachelor's and I’ve
+              had the privilege of interning at{' '}
               <a href="https://motorolasolutions.com/">Motorola Solutions</a>,{' '}
               <a href="https://jindalsteelpower.com/">Jindal Steel and Power</a>,{' '}
               <a href="https://www.bostonindia.in/">Boston IT</a>, and{' '}
-              <a href="https://www.khelgully.com">a start-up</a>. My
-              main focus these days is observing and learning all new kinds of tech-stack.
+              <a href="https://www.khelgully.com">a start-up</a>. My main focus these days is
+              observing and learning all new kinds of tech-stack.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
@@ -138,7 +144,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpeg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

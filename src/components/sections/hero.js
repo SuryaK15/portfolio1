@@ -82,10 +82,11 @@ const Hero = () => {
       const options = {
         strings: [
           'create web services.',
+          'was SDE Intern at Motorola.',
           'am a Developer.',
+          'am in my Final year of UG at Manipal.',
           'design interactive websites.',
           'am a Problem Solver.',
-          'am a Software Developer.',
           'am Batman (...maybe? 😛)',
         ],
         typeSpeed: 125,
@@ -117,7 +118,7 @@ const Hero = () => {
     <h3 className="big-heading">
       I{' '}
       <span ref={typedElementRef} className="auto-type">
-        create web services
+        create web services.
       </span>
     </h3>
   );
@@ -131,7 +132,7 @@ const Hero = () => {
           Manipal Institute of Technology
         </a>
         . <br />
-        Ex-Data Engineering Intern at{' '}
+        Ex - Engineering Intern @{' '}
         <a href="https://motorolasolutions.com/" target="_blank" rel="noreferrer">
           Motorola
         </a>
