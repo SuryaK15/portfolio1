@@ -68,7 +68,7 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
+  const [setGitHubInfo] = useState({
     stars: null,
     forks: null,
   });
@@ -108,12 +108,7 @@ const Footer = () => {
           <div>Built with ❤️ By Surya Kiran</div>
         </a>
       </StyledCredit>
-      <StyledCredit tabindex="0">
-        <a href="https://brittanychiang.com/">
-          <div>Designed by Brittany Chiang</div>
-        </a>
-      </StyledCredit>
-  
+      <StyledCredit tabindex="0"></StyledCredit>
     </StyledFooter>
   );
 };
