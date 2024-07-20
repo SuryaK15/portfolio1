@@ -11,7 +11,6 @@ const StyledContactSection = styled.section`
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
-
   .overline {
     display: block;
     margin-bottom: 20px;
